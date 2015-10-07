@@ -1,7 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
   height: 100%;
-  font-family: Helvetica
+  // font-family: Helvetica;
 }
 
 // navbar
@@ -40,10 +45,18 @@ body {
 
 // container
 body > .container  {
+  padding: 0;
   height: 100%;
+  width: 100%;
 
-  .page-header {
-    padding-top: 110px;
+  .jumbotron {
+    margin-top: 110px;
+
+    .new-event {
+      max-width: 1150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
