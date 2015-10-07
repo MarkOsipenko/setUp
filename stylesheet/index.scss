@@ -1,15 +1,50 @@
-@media screen and(max-width: 986px) {
-  .container .jumbotron {
-    padding-left: 15px;
-    padding-right: 0px;
-
-    .new-event-description {
-      h1 {
-        font-size: 2.5em;
+@media screen and(max-divice-width: 924px) {
+ .container {
+    .event-container {
+      .new-event {
+        div.new-event-description {
+          h1 {
+            font-size: 1.5em;
+          }
+        }
       }
     }
   }
 }
+
+@media screen and(max-divice-width: 1024px) {
+  body .container {
+    .event-container {
+      .new-event {
+        .logo-new-event {
+          img {
+            width: 124px;
+            height: 124px;
+          }
+        }
+
+        .new-event-description {
+          h1 {
+            font-size: 3em ;
+          }
+
+          div.new-event-date {
+            h4 {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-divice-width: 1200px) {
+  .container {
+    padding-right: 0px !important;
+  }
+}
+
 
 * {
   padding: 0;
@@ -24,17 +59,12 @@ body {
 
 // navbar
 .navbar {
+  margin-bottom: 0px;
   min-height: 110px;
   border: none;
   background-color: #ffffff;
+
   .container {
-    .navbar-header {
-      .navbar-brand {
-        height: 110px;
-      }
-    }
-
-
     #navbar {
       .navbar-nav {
         margin: 25px;
@@ -60,67 +90,65 @@ body > .container  {
   padding: 0;
   height: 100%;
   width: 100%;
+}
 
+.event-container {
+  width: 100%;
+  padding-bottom: 45px;
+  background-image: url("../../images/bg-jumbotron.png");
 
-  .jumbotron {
-    margin-top: 110px;
-    height: 390px;
-     background-image: url("../../images/bg-jumbotron.png");
-    .new-event {
-      max-width: 1150px;
-      margin-left: auto;
-      margin-right: auto;
+  .new-event {
+    padding-top: 45px;
+    max-divice-width: 1150px;
 
-      .logo-new-event {
-        margin-right: 25px;
-        float: left;
-      }
+    .logo-new-event {
+      margin-right: 25px;
+      float: left;
+    }
 
-      .new-event-description {
-        max-width: 800px;
-        display: inline-block;
-        color: #51667e;
+    .new-event-description {
+      max-divice-width: 800px;
+      display: inline-block;
+      color: #51667e;
 
-        h1 {
-          margin-top: 0;
-          margin-bottom: 20px;
-          line-height: 0.8em;
-          a {
-            font-weight: bold;
-            white-space: nowrap;
-            color: #51667e;
-          }
-        }
+      h1 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        line-height: 0.8em;
+        font-size: 4.5em;
 
-        .want-go {
-          margin-top: 30px;
-          width: 190px;
-          height: 60px;
-          border-radius: 0px;
-          border: none;
-          color: #ffffff;
-          background-color: #f59331;
-
-          h3 {
-            margin: 0;
-          }
-        }
-
-        button.want-go:hover {
-          background-color: #557DF7;
-        }
-      }
-
-      .new-event-date {
-        h4 {
-          margin-top: 60px;
+        a {
           font-weight: bold;
+          white-space: nowrap;
+          color: #51667e;
         }
+      }
+
+      .want-go {
+        margin-top: 30px;
+        width: 190px;
+        height: 60px;
+        border-radius: 0px;
+        border: none;
+        color: #ffffff;
+        background-color: #f59331;
+
+        h3 {
+          margin: 0;
+        }
+      }
+
+      .want-go:hover {
+        background-color: #557DF7;
+      }
+    }
+
+    .new-event-date {
+      h4 {
+        margin-top: 60px;
+        font-weight: bold;
       }
     }
   }
 }
 
-.footer {
-  margin-top: -60px;
-}
