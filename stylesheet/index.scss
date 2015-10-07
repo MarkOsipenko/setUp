@@ -1,4 +1,4 @@
-@media screen and(max-device-width: 924px) {
+@media screen and(max-width: 924px) {
  .container {
     .event-container {
       .new-event {
@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and(max-device-width: 1024px) {
+@media screen and(max-width: 1024px) {
   body .container {
     .event-container {
       .new-event {
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and(max-device-width: 1200px) {
+@media screen and(max-width: 1200px) {
   .container {
     padding-right: 0px !important;
   }
