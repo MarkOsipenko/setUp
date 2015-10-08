@@ -1,14 +1,6 @@
-@media screen and(max-width: 924px) {
- .container {
-    .event-container {
-      .new-event {
-        div.new-event-description {
-          h1 {
-            font-size: 1.5em;
-          }
-        }
-      }
-    }
+@media screen and(max-width: 1200px) {
+  .container {
+    padding-right: 0px !important;
   }
 }
 
@@ -39,9 +31,22 @@
   }
 }
 
-@media screen and(max-width: 1200px) {
-  .container {
-    padding-right: 0px !important;
+@media screen and(max-width: 924px) {
+ .container {
+    .event-container {
+      .new-event {
+        div.new-event-description {
+          font-size: .5em;
+        }
+
+        .new-event-date {
+          h4 {
+            margin-top: 55px !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
 }
 
