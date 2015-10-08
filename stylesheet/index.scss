@@ -60,6 +60,7 @@
           float: none !important;
           width: 197px !important;
           margin: 0 auto !important;
+
           img {
             width: 197px;
             height: 197px;
@@ -69,14 +70,19 @@
         div.new-event-description {
           margin: 20px auto;
           display: block;
-          width: 250px;
+          max-width: 250px;
           text-align: center;
-          font-size: .5em;
+          font-size: .45em;
         }
+
+        h1 a{
+              white-space: normal !important;
+              line-height: 1em;
+            }
 
         .new-event-date {
           h4 {
-            margin-top: 55px !important;
+            margin-top: 5px !important;
             font-weight: bold;
           }
         }
@@ -84,40 +90,6 @@
     }
   }
 }
-
-@media screen and(max-width: 510px) {
-   .container {
-    .event-container {
-      div.new-event {
-        div.logo-new-event {
-          float: none !important;
-          width: 197px !important;
-          margin: 0 auto !important;
-          img {
-            width: 197px;
-            height: 197px;
-          }
-        }
-
-        div.new-event-description {
-          margin: 20px auto;
-          display: block;
-          width: 250px;
-          text-align: center;
-          font-size: .5em;
-        }
-
-        .new-event-date {
-          h4 {
-            margin-top: 55px !important;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-  }
-}
-
 
 * {
   padding: 0;
