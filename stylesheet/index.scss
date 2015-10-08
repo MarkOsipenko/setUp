@@ -74,6 +74,16 @@ $text-color: #51667e;
   }
 }
 
+
+
+@media screen and(max-width: 780px) {
+  .event-container {
+    div.new-event {
+      max-width: 740px ;
+    }
+  }
+}
+
 @media screen and(max-width: 510px) {
   .container {
     padding-left: 0px !important;
@@ -244,11 +254,28 @@ body > .container  {
       }
     }
 
-     .lector {
-        margin-top: 70px;
-        h4 {
-          font-weight: bold;
-        }
+    .lector {
+      margin-top: 70px;
+      h4 {
+        font-weight: bold;
       }
+    }
+  }
+
+  .information-partners {
+    margin-top: 20px;
+    text-align: center;
+    color: $text-color;
+
+    h4 {
+      margin-bottom: 50px;
+      font-weight: bold;
+    }
+
+    a {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
   }
 }
