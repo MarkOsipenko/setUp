@@ -36,6 +36,40 @@
     .event-container {
       .new-event {
         div.new-event-description {
+          font-size: .6em;
+        }
+
+        .new-event-date {
+          h4 {
+            font-size: 1.5em;
+            margin-top: 45px !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 510px) {
+   .container {
+    .event-container {
+      div.new-event {
+        div.logo-new-event {
+          float: none !important;
+          width: 197px !important;
+          margin: 0 auto !important;
+          img {
+            width: 197px;
+            height: 197px;
+          }
+        }
+
+        div.new-event-description {
+          margin: 20px auto;
+          display: block;
+          width: 250px;
+          text-align: center;
           font-size: .5em;
         }
 
@@ -56,13 +90,13 @@
   margin: 0;
 }
 
-html,
-body {
-  height: 100%;
-  // font-family: Helvetica;
+// navbar
+
+.container >.navbar-header {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
-// navbar
 .navbar {
   margin-bottom: 0px;
   min-height: 110px;
@@ -70,7 +104,7 @@ body {
   background-color: #ffffff;
 
   .container {
-    #navbar {
+      #navbar {
       .navbar-nav {
         margin: 25px;
 
