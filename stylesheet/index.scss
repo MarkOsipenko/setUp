@@ -372,6 +372,8 @@ body > .container  {
 
   .video-from-events {
     margin-left: 100px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d0d0d0;
 
     .section-name-video {
       margin-bottom: 35px;
@@ -405,6 +407,21 @@ body > .container  {
           top: 300px;
         }
 
+      }
+    }
+
+    .tags {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      p {
+        display: inline-block;
+        font-weight: bold;
+        color: $text-color;
+      }
+
+      .label {
+        color: $text-color;
+        background-color: #e2e2e2;
       }
     }
   }
