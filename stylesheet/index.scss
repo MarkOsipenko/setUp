@@ -11,10 +11,12 @@ $text-color: #51667e;
 
       .video-from-events {
         margin-left: 0px;
+
         iframe {
-      width: 725px;
-      height: 367px;
+          width: 725px;
+          height: 367px;
         }
+
         .button-to-video {
           width: 105px;
           height: 367px;
@@ -61,6 +63,7 @@ $text-color: #51667e;
             width: 527px;
             height: 267px;
           }
+
           .button-to-video {
             width: 95px;
             height: 267px;
@@ -373,7 +376,6 @@ body > .container  {
   .video-from-events {
     margin-left: 100px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #d0d0d0;
 
     .section-name-video {
       margin-bottom: 35px;
@@ -411,8 +413,11 @@ body > .container  {
     }
 
     .tags {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #d0d0d0;
+
       p {
         display: inline-block;
         font-weight: bold;
@@ -424,6 +429,83 @@ body > .container  {
         background-color: #e2e2e2;
       }
     }
+
+    .share-video {
+      color: $text-color;
+
+      .posts-share {
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin-left: 2px;
+          margin-right: 2px;
+
+          a {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            background-color: #929292;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+
+          .logo-vk {
+            background-image: url('../../images/share/vk.png');
+            background-position: 50%;
+            background-size: 80%;
+          }
+
+          .logo-vk:hover {
+            background-color: #56789D;
+          }
+
+
+          .logo-facebook {
+            background-image: url('../../images/share/facebook.png');
+            background-position: 50% 95%;
+            background-size: 40%;
+          }
+
+          .logo-facebook:hover {
+            background-color: #44619D;
+          }
+
+          .logo-instagram {
+            background-image: url('../../images/share/instagram.png');
+            background-position: 50%;
+            background-size: 60%;
+          }
+
+          .logo-instagram:hover {
+            background-color: #2A5B83;
+          }
+
+
+          .logo-odnoklassniki {
+            background-image: url('../../images/share/odnoklassniki.png');
+            background-position: 50%;
+            background-size: 40%;
+          }
+
+          .logo-odnoklassniki:hover {
+            background-color: #F68634;
+          }
+
+          .logo-twitter {
+            background-image: url('../../images/share/twitter.png');
+            background-position: 50%;
+            background-size: 70%;
+          }
+
+          .logo-twitter:hover {
+            background-color: #3D8CC7;
+          }
+        }
+      }
+
+    }
+
   }
 
   .information-partners {
