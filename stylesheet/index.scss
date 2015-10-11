@@ -8,6 +8,25 @@ $text-color: #51667e;
       .description-setup-project {
         margin-left: 0px;
       }
+
+      .video-from-events {
+        margin-left: 0px;
+        iframe {
+          width: 580px;
+          height: 294px;
+        }
+        .button-to-video {
+          width: 100px;
+          height: 294px;
+
+          a {
+            p {
+              top: 200px;
+            }
+          }
+
+        }
+      }
     }
   }
 }
@@ -36,6 +55,26 @@ $text-color: #51667e;
         }
       }
     }
+    .main-container {
+      .video-from-events {
+          margin-left: 0px;
+          iframe {
+            width: 527px;
+            height: 267px;
+          }
+          .button-to-video {
+            width: 95px;
+            height: 267px;
+
+            a {
+              p {
+                top: 200px;
+              }
+            }
+
+          }
+        }
+   }
   }
 }
 
@@ -69,7 +108,6 @@ $text-color: #51667e;
           margin-right: auto;
           max-width: 350px;
         }
-
     }
   }
 }
@@ -256,14 +294,56 @@ body > .container  {
 
     .lector {
       margin-top: 70px;
+      margin-bottom: 110px;
       h4 {
         font-weight: bold;
       }
     }
   }
 
+  .video-from-events {
+    margin-left: 100px;
+
+    .section-name-video {
+      margin-bottom: 35px;
+      color: $text-color;
+      font-weight: bold;
+    }
+
+    iframe {
+      display: inline-block;
+      width: 870px;
+      height: 440px;
+    }
+
+    .button-to-video {
+      display: inline-block;
+      width: 105px;
+      height: 440px;
+      background-color: #f1f3f5;
+      background-image: url('../../images/Rectangle.png');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      a {
+        float: left;
+        height: 100%;
+        color: $text-color;
+
+        p {
+          position:relative;
+          top: 300px;
+        }
+
+      }
+    }
+
+  }
+
   .information-partners {
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     color: $text-color;
 
@@ -278,4 +358,7 @@ body > .container  {
       display: inline-block;
     }
   }
+
+
+
 }
