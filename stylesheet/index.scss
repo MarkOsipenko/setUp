@@ -12,16 +12,16 @@ $text-color: #51667e;
       .video-from-events {
         margin-left: 0px;
         iframe {
-          width: 580px;
-          height: 294px;
+      width: 725px;
+      height: 367px;
         }
         .button-to-video {
-          width: 100px;
-          height: 294px;
+          width: 105px;
+          height: 367px;
 
           a {
             p {
-              top: 200px;
+              top: 240px;
             }
           }
 
@@ -57,7 +57,6 @@ $text-color: #51667e;
     }
     .main-container {
       .video-from-events {
-          margin-left: 0px;
           iframe {
             width: 527px;
             height: 267px;
@@ -112,15 +111,62 @@ $text-color: #51667e;
   }
 }
 
-
-
 @media screen and(max-width: 780px) {
   .event-container {
     div.new-event {
-      max-width: 740px ;
+      max-width: 740px;
+    }
+  }
+
+  .container {
+    .main-container{
+      div.video-from-events {
+        iframe {
+          width: 439px;
+          height: 223px;
+        }
+        .button-to-video {
+          width: 90px;
+          height: 223px;
+
+          a {
+            p {
+              top: 150px;
+            }
+          }
+
+        }
+      }
     }
   }
 }
+
+@media screen and(max-width: 660px) {
+  .container {
+    .main-container{
+      div.video-from-events {
+        iframe {
+          width: 420px;
+          height: 223px;
+        }
+        div.button-to-video {
+          width: 420px;
+          height: 50px;
+          background-size: 3%;
+          background-position: 400px;
+
+          a {
+            p {
+              top: 40%;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and(max-width: 510px) {
   .container {
@@ -159,6 +205,29 @@ $text-color: #51667e;
         }
       }
     }
+
+    .main-container{
+      div.video-from-events {
+        iframe {
+          width: 350px;
+          height: 223px;
+        }
+        .button-to-video {
+          width: 350px !important;
+          height: 50px;
+          background-size: 3%;
+          background-position: 330px !important;
+
+          a {
+            p {
+              top: 40%;
+            }
+          }
+
+        }
+      }
+    }
+
   }
 }
 
@@ -338,7 +407,6 @@ body > .container  {
 
       }
     }
-
   }
 
   .information-partners {
