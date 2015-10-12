@@ -1,5 +1,11 @@
 $text-color: #51667e;
 
+@media screen and(max-width: 1366px) {
+  div.forthcoming-events {
+    width: 1400px;
+  }
+
+}
 @media screen and(max-width: 1200px) {
   .container {
     padding-right: 0px;
@@ -22,13 +28,17 @@ $text-color: #51667e;
           height: 367px;
 
           a {
-            p {
+            span {
               top: 240px;
             }
           }
         }
       }
     }
+  }
+
+  div.forthcoming-events {
+    width: 1200px;
   }
 }
 
@@ -45,7 +55,7 @@ $text-color: #51667e;
 
         .new-event-description {
           h1 {
-            font-size: 3em ;
+            font-size: 3em;
           }
 
           div.new-event-date {
@@ -69,7 +79,7 @@ $text-color: #51667e;
             height: 267px;
 
             a {
-              p {
+              span {
                 top: 200px;
               }
             }
@@ -82,7 +92,7 @@ $text-color: #51667e;
           margin: 5px;
           height: 90px;
 
-          a p {
+          a span {
             margin-top: 65px;
           }
         }
@@ -94,6 +104,11 @@ $text-color: #51667e;
       }
     }
   }
+
+  div.forthcoming-events {
+    width: 1050px;
+  }
+
 }
 
 @media screen and(max-width: 924px) {
@@ -128,9 +143,22 @@ $text-color: #51667e;
         }
     }
   }
+
+  .container {
+    div.interesting-categories {
+      div.interesting-help {
+        display: none;
+      }
+    }
+  }
+
+  div.forthcoming-events {
+    width: 900px;
+  }
+
 }
 
-@media screen and(max-width: 780px) {
+@media screen and(max-width: 768px) {
   .event-container {
     div.new-event {
       max-width: 740px;
@@ -149,7 +177,7 @@ $text-color: #51667e;
           height: 223px;
 
           a {
-            p {
+            span {
               top: 150px;
             }
           }
@@ -157,14 +185,14 @@ $text-color: #51667e;
         }
       }
 
-
       div.interesting-categories {
         .interesting {
-          margin: 0;
-          // height: 120px;
+          margin-left: 0px !important;
+          height: 250px;
 
-          a {
-            margin-top: 90px;
+          a span {
+            font-size: 2em;
+            margin-top: 200px;
           }
         }
 
@@ -177,6 +205,23 @@ $text-color: #51667e;
       }
     }
   }
+
+  div.forthcoming-events {
+    width: 468px;
+
+    div.col-4 {
+      width: 100%;
+    }
+
+    div.col-2 {
+      width: 100%;
+    }
+
+    div.col-invisible {
+      display: none !important;
+    }
+  }
+
 }
 
 @media screen and(max-width: 660px) {
@@ -194,7 +239,7 @@ $text-color: #51667e;
           background-position: 400px;
 
           a {
-            p {
+            span {
               top: 40%;
             }
           }
@@ -204,11 +249,9 @@ $text-color: #51667e;
 
       div.interesting-categories {
         .interesting {
-          margin: 0;
-          height: 70px;
 
-          a p {
-            margin-top: 50px;
+          a span {
+            margin-top: 155px;
           }
         }
 
@@ -219,7 +262,6 @@ $text-color: #51667e;
     }
   }
 }
-
 
 @media screen and(max-width: 510px) {
   .container {
@@ -245,7 +287,7 @@ $text-color: #51667e;
           font-size: .45em;
         }
 
-        h1 a{
+        h1 a {
               white-space: normal !important;
               line-height: 1em;
         }
@@ -272,7 +314,7 @@ $text-color: #51667e;
           background-position: 310px !important;
 
           a {
-            p {
+            span {
               top: 40%;
             }
           }
@@ -283,15 +325,9 @@ $text-color: #51667e;
         padding: 0;
 
         .interesting {
-          margin-top: 5px;
-          margin-bottom: 5px;
-          margin-left: 15px;
-          margin-right: 15px;
-          width: 270px;
-          height: 120px;
-
-          a p {
-            margin-top: 90px;
+          height: 165px;
+          a span {
+            margin-top: 120px;
           }
         }
 
@@ -300,6 +336,22 @@ $text-color: #51667e;
           height: 60px;
         }
       }
+    }
+  }
+
+  div.forthcoming-events {
+    width: 428px;
+
+    div.col-4 {
+      width: 100%;
+    }
+
+    div.col-2 {
+      width: 100%;
+    }
+
+    div.col-invisible {
+      display: none !important;
     }
   }
 }
@@ -477,7 +529,7 @@ body > .container  {
         height: 100%;
         color: $text-color;
 
-        p {
+        span {
           position:relative;
           top: 300px;
         }
@@ -495,6 +547,10 @@ body > .container  {
         display: inline-block;
         font-weight: bold;
         color: $text-color;
+      }
+
+      a:hover {
+        text-decoration: none;
       }
 
       .label {
@@ -600,33 +656,21 @@ body > .container  {
     .interesting {
       margin: 5px;
       height: 122px;
-      background-color: #51667e;
       background-repeat: no-repeat;
       background-size: 100%;
 
-      a p {
+      a span {
+          display: inline-block;
           margin-top: 90px;
           color: #ffffff;
       }
 
       a:hover {
         text-decoration: none;
-        p {
+        span {
           color: #000000;
         }
       }
-    }
-
-    .interesting-biology {
-      background-image: url('../../images/interesting/biology.png');
-    }
-
-    .interesting-space {
-      background-image: url('../../images/interesting/space.png');
-    }
-
-    .interesting-medicine {
-      background-image: url('../../images/interesting/medicine.png');
     }
 
     .interesting-help {
@@ -640,9 +684,98 @@ body > .container  {
   }
 }
 
+.interesting-biology {
+  background-image: url('../../images/interesting/biology.png');
+}
+
+.interesting-space {
+  background-image: url('../../images/interesting/space.png');
+}
+
+.interesting-medicine {
+  background-image: url('../../images/interesting/medicine.png');
+}
+
 // forthcoming-event
 .forthcoming-events {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1640px;
+  height: 445px;
+
+
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: $text-color;
+  }
+
   .forthcoming-event {
-    // border:  1px solid red;
+    margin: 5px;
+    float: left;
+    color: #ffffff;
+
+    p {
+      position: relative;
+      left: 10px;
+      top: 137px;
+    }
+
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .col-2 {
+    display: inline-block;
+    height: 115px;
+    width: 13.75%;
+  }
+
+  .col-4 {
+    display: inline-block;
+    height: 230px;
+    width: 27.5%;
+
+    .col-invisible-right {
+      position: relative;
+
+      width: 50%;
+      z-index: 999;
+    }
+
+    .col-invisible-right:nth-child(3) {
+      left: 101.5%;
+      top: 8%;
+      background-color: #b8c0c9;
+    }
+
+    .col-invisible-right:nth-child(4) {
+      left: 101.5%;
+      top: 8%;
+    }
+
+    .col-invisible-right:nth-child(5) {
+      left: 49%;
+      top: -46%;
+    }
+  }
+
+  .col-invisible {
+    background-color: #6f7c93;
+  }
+
+  .interesting-space {
+    background-size: 100% ;
+  }
+
+  .interesting-medicine {
+    background-size: 100% ;
+  }
+
+  .interesting-biology {
+    background-size: 100% ;
   }
 }
+
+
