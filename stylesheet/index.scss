@@ -356,6 +356,11 @@ $text-color: #51667e;
   }
 }
 
+
+html {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -364,7 +369,7 @@ $text-color: #51667e;
 // navbar
 
 .container >.navbar-header {
-    margin-right: 0px   ;
+    margin-right: 0px;
     margin-left: 0px;
 }
 
@@ -401,6 +406,7 @@ body > .container  {
   padding: 0;
   height: 100%;
   width: 100%;
+
 }
 
 // new event
@@ -702,7 +708,6 @@ body > .container  {
   margin-right: auto;
   width: 1640px;
   height: 445px;
-
 
   h1 {
     font-size: 4em;
