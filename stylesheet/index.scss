@@ -3,9 +3,54 @@ $text-color: #51667e;
 @media screen and(max-width: 1366px) {
   div.forthcoming-events {
     width: 1400px;
+
+    div.forthcoming-event {
+      height: 108px;
+      margin: 5px;
+      float: left;
+      color: #ffffff;
+
+      p {
+        position: relative;
+        left: 10px;
+        top: 124px;
+      }
+
+      p.biology-wrap {
+        left: 10px;
+        top: 85px;
+      }
+    }
+
+    div.col-4 {
+      height: 218px;
+
+      .col-invisible-right {
+        position: relative;
+        width: 50%;
+        z-index: 999;
+      }
+
+      .col-invisible-right:nth-child(3) {
+        left: 101.5%;
+        top: 5%;
+        background-color: #b8c0c9;
+      }
+
+      .col-invisible-right:nth-child(4) {
+        left: 101.5%;
+        top: 6%;
+      }
+
+      .col-invisible-right:nth-child(5) {
+        left: 49%;
+        top: -48%;
+      }
+    }
   }
 
 }
+
 @media screen and(max-width: 1200px) {
   .container {
     padding-right: 0px;
@@ -39,6 +84,50 @@ $text-color: #51667e;
 
   div.forthcoming-events {
     width: 1200px;
+
+    div.forthcoming-event {
+      height: 92px;
+      margin: 5px;
+      float: left;
+      color: #ffffff;
+
+      p {
+        position: relative;
+        left: 10px;
+        top: 100px;
+      }
+
+      p.biology-wrap {
+        left: 10px;
+        top: 65px;
+      }
+    }
+
+   div.col-4 {
+      height: 187px;
+
+      .col-invisible-right {
+        position: relative;
+        width: 50%;
+        z-index: 999;
+      }
+
+      .col-invisible-right:nth-child(3) {
+        left: 101.5%;
+        top: -1.5%;
+        background-color: #b8c0c9;
+      }
+
+      .col-invisible-right:nth-child(4) {
+        left: 101.5%;
+        top: -1%;
+      }
+
+      .col-invisible-right:nth-child(5) {
+        left: 48.5%;
+        top: -55.5%;
+      }
+    }
   }
 }
 
@@ -107,8 +196,60 @@ $text-color: #51667e;
 
   div.forthcoming-events {
     width: 1050px;
-  }
 
+    div.forthcoming-event {
+      height: 81px;
+      margin: 5px;
+      float: left;
+      color: #ffffff;
+
+      p {
+        position: relative;
+        left: 10px;
+        top: 72px;
+      }
+
+      .space-wpar {
+        top: 52px;
+        width: 150px;
+
+        a {
+          width: 150px;
+        }
+      }
+
+      p.biology-wrap {
+        left: 10px;
+        top: 60px;
+      }
+    }
+
+   div.col-4 {
+      height: 162px;
+
+      .col-invisible-right {
+        position: relative;
+        width: 50%;
+        z-index: 999;
+      }
+
+      .col-invisible-right:nth-child(3) {
+        left: 101.5%;
+        top: -10.5%;
+        background-color: #b8c0c9;
+      }
+
+      .col-invisible-right:nth-child(4) {
+        left: 101.5%;
+        top: -10.5%;
+      }
+
+      .col-invisible-right:nth-child(5) {
+        left: 48.5%;
+        top: -66.5%;
+      }
+    }
+  }
 }
 
 @media screen and(max-width: 924px) {
@@ -154,6 +295,59 @@ $text-color: #51667e;
 
   div.forthcoming-events {
     width: 900px;
+
+    div.forthcoming-event {
+      height: 70px;
+      margin: 5px;
+      float: left;
+      color: #ffffff;
+
+      p {
+        position: relative;
+        left: 10px;
+        top: 52px;
+      }
+
+      .space-wpar {
+        top: 32px;
+        width: 150px;
+
+        a {
+          width: 150px;
+        }
+      }
+
+      p.biology-wrap {
+        left: 10px;
+        top: 50px;
+      }
+    }
+
+   div.col-4 {
+      height: 140px;
+
+      .col-invisible-right {
+        position: relative;
+        width: 50%;
+        z-index: 999;
+      }
+
+      .col-invisible-right:nth-child(3) {
+        left: 101.5%;
+        top: -20%;
+        background-color: #b8c0c9;
+      }
+
+      .col-invisible-right:nth-child(4) {
+        left: 101.5%;
+        top: -21.5%;
+      }
+
+      .col-invisible-right:nth-child(5) {
+        left: 48%;
+        top: -78.5%;
+      }
+    }
   }
 
 }
@@ -207,21 +401,48 @@ $text-color: #51667e;
   }
 
   div.forthcoming-events {
-    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
 
-    div.col-4 {
+    .section-name-forthcoming {
       width: 100%;
     }
 
-    div.col-2 {
-      width: 100%;
+    div.forthcoming-event {
+      height: 70px;
+      margin: 5px;
+
+      p {
+        position: relative;
+        left: 10px;
+        top: 52px;
+      }
+
+      .space-wpar {
+        top: 32px;
+        width: 150px;
+
+        a {
+          width: 150px;
+        }
+      }
+
+      p.biology-wrap {
+        left: 10px;
+        top: 50px;
+      }
+    }
+
+    div.col-4 {
+      height: 140px;
+      width: 247px;
     }
 
     div.col-invisible {
       display: none !important;
     }
   }
-
 }
 
 @media screen and(max-width: 660px) {
@@ -232,6 +453,7 @@ $text-color: #51667e;
           width: 420px;
           height: 223px;
         }
+
         div.button-to-video {
           width: 420px;
           height: 50px;
@@ -249,7 +471,6 @@ $text-color: #51667e;
 
       div.interesting-categories {
         .interesting {
-
           a span {
             margin-top: 155px;
           }
@@ -259,6 +480,40 @@ $text-color: #51667e;
           display: none;
         }
       }
+    }
+  }
+
+  div.forthcoming-events {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+
+    .section-name-forthcoming {
+      text-align: center;
+      font-size: 2.5em;
+    }
+
+    div.forthcoming-event {
+      p {
+        position: relative;
+        left: 10px;
+        top: 52px;
+      }
+
+      .space-wpar {
+        top: 32px;
+        width: 150px;
+      }
+
+      p.biology-wrap {
+        left: 10px;
+        top: 50px;
+      }
+    }
+
+    div.col-4 {
+      height: 155px;
+      width: 280px;
     }
   }
 }
@@ -340,22 +595,39 @@ $text-color: #51667e;
   }
 
   div.forthcoming-events {
-    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+
+    .section-name-forthcoming {
+      text-align: center;
+      font-size: 2.5em;
+    }
+
+    div.forthcoming-event {
+      p {
+        position: relative;
+        left: 10px;
+        top: 52px;
+      }
+
+      .space-wpar {
+        top: 32px;
+        width: 150px;
+      }
+
+      p.biology-wrap {
+        left: 10px;
+        top: 50px;
+      }
+    }
 
     div.col-4 {
-      width: 100%;
-    }
-
-    div.col-2 {
-      width: 100%;
-    }
-
-    div.col-invisible {
-      display: none !important;
+      height: 155px;
+      width: 280px;
     }
   }
 }
-
 
 html {
   overflow-x: hidden;
@@ -704,12 +976,17 @@ body > .container  {
 
 // forthcoming-event
 .forthcoming-events {
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 1640px;
   height: 445px;
 
-  h1 {
+  .section-name-forthcoming {
+    width: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     font-size: 4em;
     font-weight: bold;
     color: $text-color;
@@ -724,6 +1001,11 @@ body > .container  {
       position: relative;
       left: 10px;
       top: 137px;
+    }
+
+    p.biology-wrap {
+      left: 10px;
+      top: 90px;
     }
 
     a {
@@ -744,7 +1026,6 @@ body > .container  {
 
     .col-invisible-right {
       position: relative;
-
       width: 50%;
       z-index: 999;
     }
