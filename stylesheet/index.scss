@@ -48,7 +48,6 @@ $text-color: #51667e;
       }
     }
   }
-
 }
 
 @media screen and(max-width: 1200px) {
@@ -349,7 +348,6 @@ $text-color: #51667e;
       }
     }
   }
-
 }
 
 @media screen and(max-width: 768px) {
@@ -404,6 +402,7 @@ $text-color: #51667e;
     margin-left: auto;
     margin-right: auto;
     width: 520px;
+    height: 300px;
 
     .section-name-forthcoming {
       width: 100%;
@@ -487,6 +486,7 @@ $text-color: #51667e;
     margin-left: auto;
     margin-right: auto;
     width: 280px;
+    height: 450px;
 
     .section-name-forthcoming {
       text-align: center;
@@ -515,12 +515,26 @@ $text-color: #51667e;
       height: 155px;
       width: 280px;
     }
+
+  //social-network properties in forthcoming-events block
+    h1.section-name-social-network {
+      width: 520px;
+      text-align: left;
+    }
   }
+
+
+  div.social-network {
+    width: 700px;
+
+  }
+
 }
 
 @media screen and(max-width: 510px) {
   .container {
     padding-left: 0px !important;
+
     .event-container {
       div.new-event {
         div.logo-new-event {
@@ -599,6 +613,7 @@ $text-color: #51667e;
     margin-right: auto;
     width: 280px;
 
+
     .section-name-forthcoming {
       text-align: center;
       font-size: 2.5em;
@@ -626,6 +641,16 @@ $text-color: #51667e;
       height: 155px;
       width: 280px;
     }
+
+  //social-network properties in forthcoming-events block
+    h1.section-name-social-network {
+      width: 220px;
+      text-align: left;
+    }
+  }
+
+  ul.posts-share {
+    width: 250px;
   }
 }
 
@@ -678,7 +703,6 @@ body > .container  {
   padding: 0;
   height: 100%;
   width: 100%;
-
 }
 
 // new event
@@ -839,75 +863,6 @@ body > .container  {
     // share-video
     .share-video {
       color: $text-color;
-
-      .posts-share {
-        list-style: none;
-
-        li {
-          display: inline-block;
-          margin-left: 2px;
-          margin-right: 2px;
-
-          a {
-            display: inline-block;
-            width: 45px;
-            height: 45px;
-            background-color: #929292;
-            background-position: center;
-            background-repeat: no-repeat;
-          }
-
-          .logo-vk {
-            background-image: url('../../images/share/vk.png');
-            background-position: 50%;
-            background-size: 80%;
-          }
-
-          .logo-vk:hover {
-            background-color: #56789D;
-          }
-
-          .logo-facebook {
-            background-image: url('../../images/share/facebook.png');
-            background-position: 50% 95%;
-            background-size: 40%;
-          }
-
-          .logo-facebook:hover {
-            background-color: #44619D;
-          }
-
-          .logo-instagram {
-            background-image: url('../../images/share/instagram.png');
-            background-position: 50%;
-            background-size: 60%;
-          }
-
-          .logo-instagram:hover {
-            background-color: #2A5B83;
-          }
-
-          .logo-odnoklassniki {
-            background-image: url('../../images/share/odnoklassniki.png');
-            background-position: 50%;
-            background-size: 40%;
-          }
-
-          .logo-odnoklassniki:hover {
-            background-color: #F68634;
-          }
-
-          .logo-twitter {
-            background-image: url('../../images/share/twitter.png');
-            background-position: 50%;
-            background-size: 70%;
-          }
-
-          .logo-twitter:hover {
-            background-color: #3D8CC7;
-          }
-        }
-      }
     }
   }
 
@@ -958,6 +913,76 @@ body > .container  {
       margin-right: 5px;
       height: 66px;
       background-color: #b8c0c9;
+    }
+  }
+}
+
+// link social network and share
+.posts-share {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-color: #929292;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .logo-vk {
+      background-image: url('../../images/share/vk.png');
+      background-position: 50%;
+      background-size: 80%;
+    }
+
+    .logo-vk:hover {
+      background-color: #56789D;
+    }
+
+    .logo-facebook {
+      background-image: url('../../images/share/facebook.png');
+      background-position: 50% 95%;
+      background-size: 40%;
+    }
+
+    .logo-facebook:hover {
+      background-color: #44619D;
+    }
+
+    .logo-instagram {
+      background-image: url('../../images/share/instagram.png');
+      background-position: 50%;
+      background-size: 60%;
+    }
+
+    .logo-instagram:hover {
+      background-color: #2A5B83;
+    }
+
+    .logo-odnoklassniki {
+      background-image: url('../../images/share/odnoklassniki.png');
+      background-position: 50%;
+      background-size: 40%;
+    }
+
+    .logo-odnoklassniki:hover {
+      background-color: #F68634;
+    }
+
+    .logo-twitter {
+      background-image: url('../../images/share/twitter.png');
+      background-position: 50%;
+      background-size: 70%;
+    }
+
+    .logo-twitter:hover {
+      background-color: #3D8CC7;
     }
   }
 }
@@ -1064,4 +1089,47 @@ body > .container  {
   }
 }
 
+// social-network
 
+.social-network {
+    .section-name-social-network {
+      width: 530px;
+    }
+  .container {
+    .links-to-social-network {
+      margin-left: auto;
+      margin-right: auto;
+      width: 530px;
+
+      .posts-share {
+        li {
+          a {
+            width: 70px;
+            height: 70px;
+          }
+
+          .logo-vk {
+            background-color: #56789D;
+          }
+
+          .logo-facebook {
+            background-color: #44619D;
+          }
+
+          .logo-instagram {
+            background-color: #2A5B83;
+          }
+
+          .logo-odnoklassniki {
+            background-color: #F68634;
+          }
+
+          .logo-twitter {
+            background-color: #3D8CC7;
+          }
+        }
+      }
+    }
+  }
+
+}
