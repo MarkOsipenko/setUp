@@ -1132,5 +1132,32 @@ body > .container  {
       }
     }
   }
+}
 
+// footer
+
+.footer {
+  margin-bottom: 70px;
+  padding-top: 30px;
+  border-top: 2px solid #b8c0c9;
+
+  .partners-footer {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    max-width: 950px;
+
+    .partners {
+      margin-bottom: 20px;
+      text-align: center;
+
+      img {
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
