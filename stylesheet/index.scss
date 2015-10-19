@@ -543,15 +543,20 @@ $text-color: #51667e;
 
   //social-network properties in forthcoming-events block
     h1.section-name-social-network {
-      width: 520px;
+      width: 400px;
       text-align: left;
     }
   }
 
 
   div.social-network {
-    width: 700px;
+    width: 100%;
 
+    .container {
+      .links-to-social-network {
+        max-width: 420px;
+      }
+    }
   }
 }
 
@@ -655,17 +660,17 @@ $text-color: #51667e;
       width: 220px;
       text-align: left;
     }
-  }
 
-  .links-to-social-network {
-    ul.posts-share {
-      width: 250px;
+    .container {
+      .links-to-social-network {
+        width: 250px;
+      }
     }
   }
 }
 
 html {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 * {
@@ -1112,9 +1117,10 @@ body > .container  {
 // social-network
 
 .social-network {
-    .section-name-social-network {
-      width: 530px;
-    }
+  .section-name-social-network {
+    width: 530px;
+  }
+
   .container {
     .links-to-social-network {
       margin-left: auto;
