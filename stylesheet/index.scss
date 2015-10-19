@@ -3,6 +3,7 @@ $text-color: #51667e;
 @media screen and(max-width: 1366px) {
   div.forthcoming-events {
     width: 1400px;
+    height: 365px;
 
     div.forthcoming-event {
       height: 108px;
@@ -79,7 +80,26 @@ $text-color: #51667e;
         }
       }
     }
+
+    div.interesting-categories {
+      div.interesting {
+        height: 92px;
+
+        a {
+          span {
+            margin-top: 64px;
+          }
+        }
+      }
+
+      div.interesting-help {
+        height: 47px;
+        margin-top: 49px;
+      }
+    }
   }
+
+
 
   div.forthcoming-events {
     width: 1200px;
@@ -167,28 +187,14 @@ $text-color: #51667e;
             height: 267px;
 
             a {
+                font-weight: bold;
+                height: 100%;
+                width: 100%;
               span {
                 top: 200px;
               }
             }
-
           }
-      }
-
-      .interesting-categories {
-        .interesting {
-          margin: 5px;
-          height: 90px;
-
-          a span {
-            margin-top: 65px;
-          }
-        }
-
-        .interesting-help {
-          margin-top: 50px;
-          height: 45px;
-        }
       }
     }
   }
@@ -294,6 +300,7 @@ $text-color: #51667e;
 
   div.forthcoming-events {
     width: 900px;
+    height: 305px;
 
     div.forthcoming-event {
       height: 70px;
@@ -379,12 +386,17 @@ $text-color: #51667e;
 
       div.interesting-categories {
         .interesting {
-          margin-left: 0px !important;
-          height: 250px;
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          height: 155px;
+          width: 280px;
+          float: none;
 
-          a span {
-            font-size: 2em;
-            margin-top: 200px;
+          a {
+              span {
+                margin-top: 120px;
+            }
           }
         }
 
@@ -399,10 +411,12 @@ $text-color: #51667e;
   }
 
   div.forthcoming-events {
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 520px;
     height: 300px;
+    clear: both;
 
     .section-name-forthcoming {
       width: 100%;
@@ -461,22 +475,33 @@ $text-color: #51667e;
 
           a {
             span {
+              margin-left: 10px;
               top: 40%;
             }
           }
-
+        }
+        .section-name {
+          margin-top: 40px;
+          margin-bottom: 35px;
+          text-align: center;
         }
       }
 
       div.interesting-categories {
         .interesting {
           a span {
-            margin-top: 155px;
+            // margin-top: 155px;
           }
         }
 
         .interesting-help {
           display: none;
+        }
+      }
+
+      .information-partners {
+        a {
+          width: 100%;
         }
       }
     }
@@ -485,8 +510,8 @@ $text-color: #51667e;
   div.forthcoming-events {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
     width: 280px;
-    height: 450px;
 
     .section-name-forthcoming {
       text-align: center;
@@ -528,7 +553,6 @@ $text-color: #51667e;
     width: 700px;
 
   }
-
 }
 
 @media screen and(max-width: 510px) {
@@ -557,8 +581,8 @@ $text-color: #51667e;
         }
 
         h1 a {
-              white-space: normal !important;
-              line-height: 1em;
+          white-space: normal !important;
+          line-height: 1em;
         }
 
         .new-event-date {
@@ -576,34 +600,17 @@ $text-color: #51667e;
           width: 320px;
           height: 223px;
         }
+
         .button-to-video {
           width: 320px !important;
           height: 50px;
           background-size: 3%;
-          background-position: 310px !important;
-
-          a {
-            span {
-              top: 40%;
-            }
-          }
+          background-position: 300px !important;
         }
       }
 
       div.interesting-categories {
         padding: 0;
-
-        .interesting {
-          height: 165px;
-          a span {
-            margin-top: 120px;
-          }
-        }
-
-        .interesting-help {
-          margin: 0;
-          height: 60px;
-        }
       }
     }
   }
@@ -612,6 +619,7 @@ $text-color: #51667e;
     margin-left: auto;
     margin-right: auto;
     width: 280px;
+    height: 400px;
 
 
     .section-name-forthcoming {
@@ -648,6 +656,7 @@ $text-color: #51667e;
       text-align: left;
     }
   }
+
   .links-to-social-network {
     ul.posts-share {
       width: 250px;
@@ -791,7 +800,7 @@ body > .container  {
 
     .lector {
       margin-top: 70px;
-      margin-bottom: 110px;
+      margin-bottom: 30px;
       h4 {
         font-weight: bold;
       }
@@ -805,6 +814,7 @@ body > .container  {
     color: $text-color;
     font-weight: bold;
   }
+
   // ----------------------
 
   .video-from-events {
@@ -861,7 +871,9 @@ body > .container  {
         background-color: #e2e2e2;
       }
     }
+
     // share-video
+
     .share-video {
       color: $text-color;
     }
@@ -886,6 +898,7 @@ body > .container  {
   }
 
   // interesting
+
   .interesting-categories {
     .interesting {
       margin: 5px;
@@ -893,10 +906,16 @@ body > .container  {
       background-repeat: no-repeat;
       background-size: 100%;
 
-      a span {
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+
+        span {
           display: inline-block;
-          margin-top: 90px;
+          margin-top: 84px;
           color: #ffffff;
+        }
       }
 
       a:hover {
@@ -1151,6 +1170,12 @@ body > .container  {
     .partners {
       margin-bottom: 20px;
       text-align: center;
+
+      p {
+        font-size: 1.1em;
+        color: #51667E;
+        font-weight: bold;
+      }
 
       img {
         margin-top: 10px;
