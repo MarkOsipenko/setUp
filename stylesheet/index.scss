@@ -703,14 +703,15 @@ body {
         margin-left: 25px;
         margin-bottom: 25px;
 
-        li a {
-          padding-bottom: 10px;
-          border-bottom: 2px solid #c8c8c8;
-          text-transform: uppercase;
+        li {
+          a {
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #c8c8c8;
+          }
         }
 
-        li:hover a,
-        li.active a {
+        li:hover a {
           background-color: #ffffff;
           border-bottom: 2px solid #f48932;
         }
@@ -719,6 +720,10 @@ body {
   }
 }
 
+.activeMenu a {
+  background-color: #ffffff;
+  border-bottom: 2px solid #f48932 !important;
+}
 // container
 
 body > .container  {
